@@ -1,3 +1,13 @@
+if [ ! -d users/alice ]
+then
+	mkdir -p users/alice
+fi
+
+if [ ! -d users/bob ]
+then
+	mkdir users/bob
+fi
+
 alias echo_current_owner='git config --global user.name; git config --global user.email;'
 
 ROOT=`pwd`
